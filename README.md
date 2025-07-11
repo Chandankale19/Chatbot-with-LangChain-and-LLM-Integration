@@ -51,5 +51,5 @@ A production-grade chatbot for querying teacher registry data using LangChain, G
 "How many contract employees are active?"
 
 ## API endpoints:
-POST /upload: Upload Excel file.
-POST /query: Submit a query.
+1. POST /upload: Upload Excel file.
+2. POST /query: Submit a query.
