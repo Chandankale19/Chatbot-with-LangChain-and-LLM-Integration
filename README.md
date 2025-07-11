@@ -16,7 +16,6 @@ A production-grade chatbot for querying teacher registry data using LangChain, G
 - Upload and process `teacher_registry.xlsx` with columns
 - Query data via a web interface or REST API.
 - Integrated with Google Gemini for robust query processing.
-- 
 ## Setup
 1. Clone the repository:
    ```bash
