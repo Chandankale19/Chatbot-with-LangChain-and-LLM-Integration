@@ -10,6 +10,7 @@ build/
 .env
 venv/
 *.log
+=0.0.30
 
 # IDEs
 .vscode/
