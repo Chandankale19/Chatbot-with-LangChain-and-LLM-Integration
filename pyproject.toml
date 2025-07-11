@@ -1,0 +1,36 @@
+
+### `pyproject.toml`
+```toml
+[tool.poetry]
+name = "teacher-registry-chatbot"
+version = "0.1.0"
+description = "A chatbot for querying teacher registry data using LangChain and Google Gemini with FastAPI"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11.9"
+langchain = "0.3.25"
+langsmith = "0.3.45"
+langchain-community = "^0.0.30"
+google-ai-generativelanguage = "0.6.18"
+langchain-google-genai = "2.1.5"
+google-cloud-aiplatform = "1.67.1"
+pandas = "2.2.2"
+numpy = "*"
+openpyxl = "3.1.5"
+chromadb = "0.5.5"
+fastapi = "0.115.0"
+uvicorn = "0.30.6"
+python-multipart = "0.0.9"
+python-dotenv = "1.0.1"
+boto3 = "1.35.24"
+tenacity = "*"
+pyyaml = "6.0.2"
+watchtower = "*"
+jinja2 = "3.0.0"
+gdown = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

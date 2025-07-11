@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Registry Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        /* Fullscreen and Reset Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .upload-section,
+        .query-section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        input[type="file"],
+        input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0 1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #uploadStatus,
+        #queryStatus {
+            margin-top: 0.5rem;
+            color: green;
+        }
+
+        #preview,
+        #response {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teacher Registry Chatbot</h1>
+        <p>Upload a teacher registry Excel file and ask questions about the data.</p>
+        <ul>
+            <li>List active teachers in GSSS KARERI</li>
+            <li>Who is the lecturer in GSSS BHUNTAR?</li>
+            <li>How many contract employees are active?</li>
+        </ul>
+
+        <div class="upload-section">
+            <h2>Fetch Excel File from Google Drive</h2>
+            <input type="text" id="driveUrl" placeholder="Enter Google Drive shareable link" />
+            <button onclick="fetchFromDrive()">Fetch</button>
+            <p id="fetchStatus"></p>
+            <div id="preview"></div>
+        </div>
+
+        <div class="query-section">
+            <h2>Ask a Question</h2>
+            <input type="text" id="queryInput" placeholder="Enter your query">
+            <button onclick="submitQuery()">Submit</button>
+            <p id="queryStatus"></p>
+            <div id="response"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

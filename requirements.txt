@@ -1,0 +1,22 @@
+langchain==0.3.25
+langsmith==0.3.45  # ✅ Compatible with langchain 0.3.25
+langchain-community>=0.0.30
+google-ai-generativelanguage==0.6.18 
+langchain-google-genai==2.1.5
+google-ai-generativelanguage==0.6.18
+google-cloud-aiplatform==1.67.1
+pandas==2.2.2
+numpy
+openpyxl==3.1.5
+chromadb==0.5.5
+fastapi==0.115.0
+uvicorn==0.30.6
+python-multipart==0.0.9
+python-dotenv==1.0.1
+boto3==1.35.24
+tenacity
+pyyaml==6.0.2
+watchtower
+jinja2==3.0.0
+gdown
+
