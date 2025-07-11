@@ -38,6 +38,17 @@ A production-grade chatbot for querying teacher registry data using LangChain, G
    
 5. Access at http://localhost:8000.   
 
+## Tech Stack
+
+1. Programming Language: Python 3.9+
+2. Frameworks and Libraries:
+3. LangChain: For LLM orchestration and data retrieval.
+4. OpenAI API or Google Gemini: For LLM integration.
+5. Pandas: For Excel file processing.
+6. ChromaDB or FAISS: For vector storage of cell-wise data.
+7. HTML,CSS, Javascript for Front end
+8. python-dotenv: For environment variable management.
+
 ## Usage
 
 1. Open the web interface at http://localhost:8000.
