@@ -20,7 +20,7 @@ A production-grade chatbot for querying teacher registry data using LangChain, G
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Chandankale19/teacher-registry-chatbot.git
+   git clone https://github.com/Chandankale19/Chatbot-with-LangChain-and-LLM-Integration.git
    cd teacher-registry-chatbot
    
 2. Create a virtual environment and install dependencies:
