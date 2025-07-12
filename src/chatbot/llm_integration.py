@@ -20,7 +20,7 @@ def initialize_llm():
     try:
         llm = ChatGoogleGenerativeAI(
             model="gemini-1.5-pro",
-            google_api_key="AIzaSyDwnCEbNTCSlHB5xKZb8H0yJUGCjMBRvdA",
+            google_api_key="",
             temperature=0.7,
             max_output_tokens=2048
         )

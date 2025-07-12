@@ -41,7 +41,7 @@ def create_vector_store(df):
         # Initialize embeddings
         embeddings = GoogleGenerativeAIEmbeddings(
             model="models/embedding-001",
-            google_api_key="AIzaSyDwnCEbNTCSlHB5xKZb8H0yJUGCjMBRvdA"
+            google_api_key=""
         )
 
         # Create vector store
